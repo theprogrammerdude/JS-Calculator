@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="result"></div>
+      <table>
+        <tr>
+          <td onclick="clr()" style="color: red">CE</td>
+        </tr>
+        <tr>
+          <td onclick="input('7')">7</td>
+          <td onclick="input('8')">8</td>
+          <td onclick="input('9')">9</td>
+          <td
+            onclick="input('+')"
+            style="background-color: coral; color: white"
+          >
+            +
+          </td>
+        </tr>
+        <tr>
+          <td onclick="input('4')">4</td>
+          <td onclick="input('5')">5</td>
+          <td onclick="input('6')">6</td>
+          <td
+            onclick="input('-')"
+            style="background-color: coral; color: white"
+          >
+            -
+          </td>
+        </tr>
+        <tr>
+          <td onclick="input('1')">1</td>
+          <td onclick="input('2')">2</td>
+          <td onclick="input('3')">3</td>
+          <td
+            onclick="input('*')"
+            style="background-color: coral; color: white"
+          >
+            *
+          </td>
+        </tr>
+        <tr>
+          <td onclick="input('.')">.</td>
+          <td onclick="input('0')">0</td>
+          <td onclick="solve()" style="background-color: coral; color: white">
+            =
+          </td>
+          <td
+            onclick="input('/')"
+            style="background-color: coral; color: white"
+          >
+            /
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
